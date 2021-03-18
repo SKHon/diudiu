@@ -1,0 +1,23 @@
+{
+  "name": "diudiu",
+  "version": "0.0.1",
+  "description": "node ",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKHon/diudiu.git"
+  },
+  "author": "SKhon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SKHon/diudiu/issues"
+  },
+  "homepage": "https://github.com/SKHon/diudiu#readme"
+}

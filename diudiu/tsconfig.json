@@ -88,7 +88,7 @@
     "pretty": true,
     "version": true
   },
-  "include": ["./lib", "./interface", "index.d.ts"],
+  "include": ["./core", "./interface", "index.d.ts"],
   "files": ["index.d.ts"],
   "exclude": ["node_modules", "./dist"]
 }

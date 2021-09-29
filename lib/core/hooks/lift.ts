@@ -1,4 +1,4 @@
-export default (app) => { 
+export default async (app) => { 
   const port = app.config.devServer.port;
   app.listen(port, () => {
     prointLogo()

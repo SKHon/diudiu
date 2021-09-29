@@ -2,7 +2,8 @@ import Koa from 'koa';
 import http from 'http';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
-const hooks = ['lift'];
+import { Hook } from './types';
+const hooks = [ 'router', 'lift' ];
 
 type Params = {
   appPath: string;
@@ -15,15 +16,12 @@ export default async function Diudiu(params: Params) {
 
   // 获取所有的config
   const env = process.env.NODE_ENV;
-  const extName = env === 'development' ? '.ts' : '.js';
-  // console.log(path.join(appPath, `config/config.base${extName}`))
+  const extName = app.extName = env === 'development' ? '.ts' : '.js';
   const baseConfig = await import(path.join(appPath, `config/config.base${extName}`))
   const curConfig = await import(path.join(appPath, `config/config.${env}${extName}`));
   app.config = deepMerge(baseConfig.default(app), curConfig.default(app));
-  // console.log(app.config)
 
-
-  const allHooks = await getHooks(hooks);
+  const allHooks: Hook[] = await getHooks(hooks);
   for ( const hook of allHooks ) {
     try {
       await hook.default(app);

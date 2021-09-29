@@ -1,8 +1,12 @@
 export default app => {
   return {
-    router: 'koa-router',
+    router: 'file',
     devServer: {
       port: 8888
+    },
+    cors: {
+      allowMethods: 'POST',
+      maxAge: 0
     }
   }
 }

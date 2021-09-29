@@ -3,7 +3,7 @@ import http from 'http';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
 import { Hook } from './types';
-const hooks = [ 'router', 'lift' ];
+const hooks = ['cors', 'router', 'lift' ];
 
 type Params = {
   appPath: string;

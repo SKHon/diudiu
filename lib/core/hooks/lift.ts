@@ -10,10 +10,10 @@ export default async (app) => {
 
 const log = message => process.stdout.write(message + '\n')
 const c = { cyan: '\x1b[36m', red: '\x1b[31m', end: '\x1b[39m' }
-const prointLogo = () => log(`
+const prointLogo = () => log(`${c.cyan}
    _ _ _ _     _ _ _ _      _       _ 
   | |   | |   |__   __|    | |     | |
   | |   | |      | |       | |     | |
   | |  | |     __| |__     | |_ _ _| |
   | | / /     |_ _ _ _|    |_ _ _ _ _|
-`)
+${c.end}`)

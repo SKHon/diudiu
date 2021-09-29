@@ -3,7 +3,7 @@ import http from 'http';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
 import { Hook } from './types';
-const hooks = ['cors', 'router', 'lift' ];
+const hooks = [ 'custom-middlewares' ,'cors', 'router', 'lift' ];
 
 type Params = {
   appPath: string;
@@ -29,8 +29,4 @@ export default async function Diudiu(params: Params) {
       
     }
   }
-  // app.listen = (...args) => {
-  //   const server = app.server = http.createServer(app.callback())
-  //   return server.listen(...args)
-  // }
 };

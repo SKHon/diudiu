@@ -7,6 +7,7 @@ export default app => {
     cors: {
       allowMethods: 'POST',
       maxAge: 0
-    }
+    },
+    middlewares: ['two', 'one']
   }
 }

@@ -9,6 +9,10 @@
   "author": "SKHon",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.13.3"
+    "koa": "^2.13.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.1"
   }
 }

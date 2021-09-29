@@ -1,0 +1,23 @@
+{
+  "name": "@skhon/example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development ts-node -T index.ts",
+    "build": "npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ini": "^1.3.5",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "diudiu-core": "0.0.1",
+    "@types/node": "^12.12.45",
+    "babel-polyfill": "^6.26.0",
+    "ts-node": "^8.3.0"
+  }
+}

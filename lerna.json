@@ -1,6 +1,6 @@
 {
   "packages": [
-    "core",
+    "lib",
     "example"
   ],
   "version": "0.0.0"

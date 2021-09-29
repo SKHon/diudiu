@@ -33,7 +33,6 @@ export default async (app) => {
       // 构建和文件路由匹配的形式：_GET_路由
       const key = '_' + method + '_' + path
       // 如果匹配到，就执行对应到handler
-      console.log(key)
       if (routerMap[key]) {
         routerMap[key](ctx)
       } else {

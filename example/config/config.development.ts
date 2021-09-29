@@ -8,6 +8,14 @@ export default app => {
       allowMethods: 'POST',
       maxAge: 0
     },
-    middlewares: ['two', 'one']
+    middlewares: ['two', 'one'],
+    login: {
+      needLogin: true,
+      secret: 'my_secret',
+      cookieOption: {
+        
+
+      }
+    }
   }
 }

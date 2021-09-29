@@ -1,0 +1,14 @@
+{
+  "name": "diudiu-core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/core/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && npx tsc"
+  },
+  "author": "SKHon",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.3"
+  }
+}

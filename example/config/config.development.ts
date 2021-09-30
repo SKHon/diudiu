@@ -22,8 +22,13 @@ export default app => {
       extension: 'ejs' 
     },
 
-    //koa-bodyparser配置
+    // koa-bodyparser配置
     bodyparser: {
+
+    },
+
+    // koa-static配置
+    static: {
       
     }
   }

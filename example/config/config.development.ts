@@ -20,6 +20,11 @@ export default app => {
     // koa-view模版配置
     view: {
       extension: 'ejs' 
+    },
+
+    //koa-bodyparser配置
+    bodyparser: {
+      
     }
   }
 }

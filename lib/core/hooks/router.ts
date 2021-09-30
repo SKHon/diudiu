@@ -28,10 +28,12 @@ export default async (app) => {
       routerMap[key] = handler
     }
 
+
     app.use(async (ctx, next) => {
       const { path, method } = ctx
       // 构建和文件路由匹配的形式：_GET_路由
       const key = '_' + method + '_' + path
+
       // 如果匹配到，就执行对应到handler
       if (routerMap[key]) {
         await routerMap[key](ctx)

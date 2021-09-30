@@ -7,7 +7,7 @@ export default async (app) => {
   if (loginConfig?.needLogin) {
     // 检测是否已经登录
     const checkLogin = (ctx, next) => {
-      console.log(ctx.url);
+
       // 这里默认检测，如果用户名是liujianghong，就算通过
       const token = ctx.cookies.get('diudiu_token');
       if (!token) {

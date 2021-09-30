@@ -1,7 +1,8 @@
 export default {
-  method: 'POST',
+  method: 'GET',
   handler: async (ctx) => {
-    console.log(ctx.request.body)
+    ctx.log('liujianghong', 'age');
+    ctx.error('aaaa')
     await ctx.render('404', {
       url: 'https://baidu.com',
     })

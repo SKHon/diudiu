@@ -1,3 +1,4 @@
+import path from 'path';
 export default app => {
   return {
     router: 'file',
@@ -29,7 +30,11 @@ export default app => {
 
     // koa-static配置
     static: {
-      
+
+    },
+
+    log: {
+      dir: path.join(__dirname, '../log')
     }
   }
 }

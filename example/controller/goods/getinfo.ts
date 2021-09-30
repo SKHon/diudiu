@@ -1,6 +1,6 @@
 export default {
   method: 'GET',
-  handler: (ctx) => {
+  handler: async (ctx) => {
     ctx.body = "this is koa book."
   }    
 }

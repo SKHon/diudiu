@@ -1,6 +1,9 @@
 export default {
   method: 'GET',
-  handler: (ctx) => {
-    ctx.body = "my name is liujianghong."
+  handler: async (ctx) => {
+    
+    await ctx.render('404', {
+      url: 'https://baidu.com',
+    })
   }    
 }

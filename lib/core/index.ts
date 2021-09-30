@@ -1,16 +1,15 @@
 import Koa from 'koa';
-import http from 'http';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
-import { Hook } from './types';
-const hooks = [ 'login', 'custom-middlewares' ,'cors', 'router', 'lift' ];
+import { Hook, App } from './types';
+const hooks = [ 'view', 'login', 'custom-middlewares' ,'cors', 'router', 'lift' ];
 
 type Params = {
   appPath: string;
 }
 
 export default async function Diudiu(params: Params) {
-  const app = new Koa();
+  const app: App = (new Koa()) as App;
   const { appPath } = params;
   app.appPath = appPath;
 

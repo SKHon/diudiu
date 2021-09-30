@@ -34,10 +34,11 @@ export default async (app) => {
       const key = '_' + method + '_' + path
       // 如果匹配到，就执行对应到handler
       if (routerMap[key]) {
-        routerMap[key](ctx)
+        await routerMap[key](ctx)
       } else {
         ctx.body = 'no this router'
       }
+      return next()
     })
   } else { // 走koa-router类型
     const routerFiles = glob.sync(path.resolve(app.appPath, './routers', `**/*${app.extName}`));

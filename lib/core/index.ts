@@ -2,7 +2,7 @@ import Koa from 'koa';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
 import { Hook, App } from './types';
-const hooks = ['static', 'view', 'bodyparser', 'login', 'custom-middlewares' ,'cors', 'router', 'lift' ];
+const hooks = [ 'log', 'static', 'view', 'bodyparser', 'login', 'custom-middlewares' ,'cors', 'router', 'lift' ];
 
 type Params = {
   appPath: string;
@@ -28,4 +28,9 @@ export default async function Diudiu(params: Params) {
       
     }
   }
+
+  // 错误捕获
+  app.on("error", error => {
+    process.emit("error", error)
+  });
 };

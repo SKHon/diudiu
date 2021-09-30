@@ -35,6 +35,22 @@ export default app => {
 
     log: {
       dir: path.join(__dirname, '../log')
+    },
+
+    // ioredis 配置
+    redis: {
+      port: 6379, 
+      host: "127.0.0.1", 
+      password: "",
+    },
+    mysql: {
+      host: 'localhost',
+      user: 'root',
+      password: '123456',
+      database: 'koadb'
+    },
+    elasticsearch: {
+      host: 'localhost:9200'
     }
   }
 }

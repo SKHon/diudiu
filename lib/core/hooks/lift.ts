@@ -4,6 +4,9 @@ export default async (app) => {
     prointLogo()
     log(`Server port ${c.cyan}${port}${c.end}`)
     log(`Server lifted in ${c.cyan}${app.appPath}${c.end}`)
+    app.redisConMsg && log(app.redisConMsg)
+    app.mysqlConMsg && log(app.mysqlConMsg)
+    app.esConMsg && log(app.esConMsg)
     log('To shut down, press <CTRL> + C at any time.\n')
   })
 }

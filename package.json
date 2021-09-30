@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./example/app.ts",
+    "lerna": "npx lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/SKHon/diudiu/issues"
   },
-  "homepage": "https://github.com/SKHon/diudiu#readme"
+  "homepage": "https://github.com/SKHon/diudiu#readme",
+  "dependencies": {
+    "koa": "^2.13.3",
+    "lerna": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }

@@ -1,0 +1,28 @@
+{
+  "name": "diudiu-core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/core/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && npx tsc"
+  },
+  "author": "SKHon",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "ejs": "^3.1.6",
+    "glob": "^7.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.3",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compose": "^4.1.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^7.0.1",
+    "lodash": "^4.17.21",
+    "pug": "^3.0.2",
+    "vary": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.1"
+  }
+}

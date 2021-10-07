@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SKHon/diudiu.git"
+    "url": "https://github.com/SKHon/diudiu.git"
   },
-  "author": "SKhon",
+  "author": "liujianghong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SKHon/diudiu/issues"

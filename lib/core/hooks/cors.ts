@@ -1,6 +1,8 @@
 import vary from 'vary';
 export default async (app) => { 
   const corsConfig = app.config.cors;
+
+  // 如果没有配置，默认不可以跨域
   if(!corsConfig) return;
   const cors = (options) => {
     const defaults = {

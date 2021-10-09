@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development ts-node -T index.ts",
-    "build": "npx tsc"
+    "build": "rm -rf ./dist && npx tsc"
   },
   "author": "",
   "license": "ISC",

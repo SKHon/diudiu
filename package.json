@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "test": "rm -rf test/.temp/* && mocha --exit -t=10000 'test/**/*.spec.js'",
     "dev": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./example/app.ts",
     "lerna": "npx lerna bootstrap"
   },
@@ -26,6 +27,10 @@
     "lerna": "^4.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "@types/node": "^16.10.3",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "nodemon": "^2.0.13",
+    "supertest": "^6.1.6"
   }
 }

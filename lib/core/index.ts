@@ -1,12 +1,14 @@
 import Koa from 'koa';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
-import { Hook, App } from './types';
+import { Hook, App, DiudiuProcess } from './types';
 const hooks = [ 'log', 'redis', 'mysql', 'elasticsearch', 'static', 'view', 'bodyparser', 'login', 'custom-middlewares' ,'cors', 'router', 'lift' ];
 
 type Params = {
   appPath: string;
 }
+
+const dprocess = process as DiudiuProcess;
 
 export default async function Diudiu(params: Params) {
   const app: App = (new Koa()) as App;
@@ -25,12 +27,12 @@ export default async function Diudiu(params: Params) {
     try {
       await hook.default(app);
     } catch (error) {
-      process.emit("error", error)
+      dprocess.emit("error", error)
     }
   }
 
   // 错误捕获
   app.on("error", error => {
-    process.emit("error", error)
+    dprocess.emit("error", error)
   });
 };

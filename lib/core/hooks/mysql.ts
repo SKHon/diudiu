@@ -1,4 +1,6 @@
 import mysql from 'mysql2';
+import { DiudiuProcess } from '../types';
+const dprocess = process as DiudiuProcess;
 export default async (app) => { 
   const mysqlConfig = app.config.mysql;
   try {
@@ -11,6 +13,6 @@ export default async (app) => {
       return next()
     })
   } catch (error) {
-    process.emit('error', error);
+    dprocess.emit('error', error);
   }
 }

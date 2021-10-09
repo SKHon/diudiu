@@ -1,4 +1,6 @@
 import Redis from 'ioredis';
+import { DiudiuProcess } from '../types';
+const dprocess = process as DiudiuProcess;
 export default async (app) => { 
   const redisConfig = app.config.redis;
   try {
@@ -10,7 +12,7 @@ export default async (app) => {
       return next();
     })
   } catch (error) {
-    process.emit('error', error);
+    dprocess.emit('error', error);
   }
   
 }

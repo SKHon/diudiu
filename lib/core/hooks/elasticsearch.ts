@@ -1,4 +1,6 @@
 import elasticsearch from 'elasticsearch';
+import { DiudiuProcess } from '../types';
+const dprocess = process as DiudiuProcess;
 export default async (app) => { 
   const esConfig = app.config.elasticsearch;
   let client = new elasticsearch.Client(esConfig);
@@ -13,6 +15,6 @@ export default async (app) => {
     })
     app.esConMsg = `elasticsearch connect success. host: ${c.cyan}${esConfig.host}${c.end}`
   } catch (error) {
-    process.emit('error', error);
+    dprocess.emit('error', error);
   }
 }

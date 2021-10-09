@@ -1,12 +1,11 @@
 {
-  "name": "@skhon/example",
+  "name": "diudiu-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "diudiu example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development ts-node -T index.ts",
-    "build": "npx tsc"
+    "build": "rm -rf ./dist && npx tsc"
   },
   "author": "",
   "license": "ISC",

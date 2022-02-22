@@ -2,7 +2,7 @@ import glob from 'glob';
 import path from 'path';
 import compose from 'koa-compose';
 
-export default async (app) => { 
+export default async (app) => {
   const { router } = app.config;
   const filesList = glob.sync(path.resolve(app.appPath, './controller', `**/*${app.extName}`))
 
@@ -14,10 +14,13 @@ export default async (app) => {
       // 解构的方式获取，当前文件导出对象中的method属性和handler属性
       const controller = await import(item);
       const { method, handler } = controller.default;
-     
+
       // 获取和actions目录的相对路径，例如：goods/getInfo.js
-      const relative = path.relative(`${app.appPath}/controller/`, item)
-      
+      let relative = path.relative(`${app.appPath}/controller/`, item)
+      // 获取当前操作系统的标识, windows:'win32', MacOS: 'darwin'
+      const platform = process.platform;
+      // 如果是windows系统: goods\getInfo.js  =>  goods/getInfo.js 
+      platform === 'win32' ? (relative = relative.replace(/\\/g, '/')) : '';
       // 获取文件后缀.js
       const extname = path.extname(item)
       // 剔除后缀.js,并在前面加一个"/",例如：/goods/getInfo

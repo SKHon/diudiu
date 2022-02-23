@@ -1,6 +1,8 @@
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
   
   ![NPM version][npm-image]
+  ![build status][travis-image]
+  [![PR's Welcome][pr-welcoming-image]][pr-welcoming-url]
 
   一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
 
@@ -46,3 +48,6 @@ feat(badge): color property can be used for non-dot badge
 [MIT](https://github.com/SKHon/koa-book-code/blob/master/LICENSE)
 
 [npm-image]: https://img.shields.io/badge/npm-v0.0.1-green
+[pr-welcoming-image]: https://img.shields.io/badge/PRs-welcome-orange
+[pr-welcoming-url]: https://github.com/skhon/diudiu/pull/new
+[travis-image]: https://img.shields.io/badge/build-passing-blue

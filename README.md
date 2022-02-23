@@ -6,10 +6,6 @@
 
   一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
 
-# diudiu
-
-一个node中间层框架
-
 ## git commit 指南
 
 ```bash

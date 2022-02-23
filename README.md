@@ -1,3 +1,8 @@
+<img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
+  [![NPM version][npm-image]][npm-url]
+
+  一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
+
 # diudiu
 
 一个node中间层框架
@@ -34,3 +39,7 @@
 fix: calendar today outline
 feat(badge): color property can be used for non-dot badge 
 ```
+
+# License
+如有引用，请标明出处，写写各位大佬。
+[MIT](https://github.com/SKHon/koa-book-code/blob/master/LICENSE)

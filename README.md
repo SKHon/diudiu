@@ -1,6 +1,6 @@
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
   
-  ![NPM version][npm-image]
+  [![NPM version][npm-image]][npm-url]
   ![build status][travis-image]
   [![PR's Welcome][pr-welcoming-image]][pr-welcoming-url]
 
@@ -51,3 +51,4 @@ feat(badge): color property can be used for non-dot badge
 [pr-welcoming-image]: https://img.shields.io/badge/PRs-welcome-orange
 [pr-welcoming-url]: https://github.com/skhon/diudiu/pull/new
 [travis-image]: https://img.shields.io/badge/build-passing-blue
+[npm-url]: https://www.npmjs.com/package/diudiu-core

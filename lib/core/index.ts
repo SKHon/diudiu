@@ -2,7 +2,7 @@ import Koa from 'koa';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
 import { Hook, App, DiudiuProcess } from './types';
-const hooks = [ 'log', 'redis', 'mysql', 'elasticsearch', 'static', 'view', 'bodyparser', 'login', 'custom-middlewares' ,'cors', 'router', 'lift' ];
+const hooks = ['formData', 'log', 'redis', 'mysql', 'elasticsearch', 'static', 'view', 'bodyparser', 'login', 'custom-middlewares', 'cors', 'router', 'lift'];
 
 type Params = {
   appPath: string;
@@ -23,7 +23,7 @@ export default async function Diudiu(params: Params) {
   app.config = deepMerge(baseConfig.default(app), curConfig.default(app));
 
   const allHooks: Hook[] = await getHooks(hooks);
-  for ( const hook of allHooks ) {
+  for (const hook of allHooks) {
     try {
       await hook.default(app);
     } catch (error) {

@@ -40,7 +40,7 @@ feat(badge): color property can be used for non-dot badge
 ```
 
 # License
-如有引用，请标明出处，写写各位大佬。
+如有引用，请标明出处。
 [MIT](https://github.com/SKHon/koa-book-code/blob/master/LICENSE)
 
 [npm-image]: https://img.shields.io/badge/npm-v0.0.1-green

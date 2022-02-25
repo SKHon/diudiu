@@ -9,18 +9,20 @@ export default app => {
       allowMethods: 'POST',
       maxAge: 0
     },
+    // 自定义中间件配置
     middlewares: ['two', 'one'],
+    // 登录模块配置
     login: {
       needLogin: true,
       secret: 'my_secret',
       cookieOption: {
-        
+
 
       }
     },
     // koa-view模版配置
     view: {
-      extension: 'ejs' 
+      extension: 'ejs'
     },
 
     // koa-bodyparser配置
@@ -37,20 +39,23 @@ export default app => {
       dir: path.join(__dirname, '../log')
     },
 
-    // ioredis 配置
-    redis: {
-      port: 6379, 
-      host: "127.0.0.1", 
-      password: "",
-    },
-    mysql: {
-      host: 'localhost',
-      user: 'root',
-      password: '123456',
-      database: 'koadb'
-    },
-    elasticsearch: {
-      host: 'localhost:9200'
-    }
+    // ioredis 配置，使用之前，需要开启redis-server
+    // redis: {
+    //   port: 6379,
+    //   host: "127.0.0.1",
+    //   password: "",
+    // },
+
+    // 注释mysql, 若需使用, 请启动mysql, 并配置相关mysql信息
+    // mysql: {
+    //   host: 'localhost',
+    //   user: 'root',
+    //   password: '123456',
+    //   database: 'koadb'
+    // },
+
+    // elasticsearch: {
+    //   host: 'localhost:9200'
+    // }
   }
 }

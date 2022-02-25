@@ -1,5 +1,6 @@
-export default async (app) => { 
-  const port = app.config.devServer.port;
+export default async (app) => {
+  // 如果没传port，默认为8888
+  const port = app.config?.devServer?.port || 8888;
   app.listen(port, () => {
     prointLogo()
     log(`Server port ${c.cyan}${port}${c.end}`)

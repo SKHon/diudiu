@@ -1,12 +1,12 @@
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
 
-  [NPM version][npm-url]
-  [build status][build-url]
-  [PR's Welcome][pr-welcoming-url]
+  [![NPM version][npm-image]][npm-url]
+  [![build status][travis-image]][build-url]
+  [![PR's Welcome][pr-welcoming-image]][pr-welcoming-url]
 
   一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
 
-[工程启动指南](./DEMO_START.MD)
+[工程启动指南](./DEMOSTART.md "指南")
 
 ## git commit 指南
 
@@ -45,3 +45,11 @@ feat(badge): color property can be used for non-dot badge
 
 如有引用，请标明出处。
 [MIT](https://github.com/SKHon/koa-book-code/blob/master/LICENSE)
+
+[demostart-url]: ./DEMOSTART.md
+[npm-image]: https://img.shields.io/badge/npm-v0.0.1-green
+[pr-welcoming-image]: https://img.shields.io/badge/PRs-welcome-orange
+[pr-welcoming-url]: https://github.com/skhon/diudiu/pull/new
+[travis-image]: https://img.shields.io/badge/build-passing-blue
+[npm-url]: https://www.npmjs.com/package/diudiu-core
+[build-url]: https://github.com/SKHon/diudiu

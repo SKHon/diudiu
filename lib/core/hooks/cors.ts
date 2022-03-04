@@ -1,7 +1,6 @@
 import vary from 'vary';
 
 type CorsHeaders = { vary: string, Vary: string | undefined };
-
 class CorsError extends Error {
   constructor(message) {
     super(message);

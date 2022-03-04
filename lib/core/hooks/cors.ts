@@ -1,4 +1,19 @@
 import vary from 'vary';
+
+type CorsHeaders = { vary: string, Vary: string | undefined };
+
+class CorsError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'CorsError';
+  }
+
+  public headers: CorsHeaders = {
+    vary: '',
+    Vary: '',
+  };
+}
+
 export default async (app) => { 
   const corsConfig = app.config.cors;
 
@@ -79,16 +94,21 @@ export default async (app) => {
         }
         try {
           return await next();
-        } catch (err: any) {
-          const errHeadersSet = err.headers || {};
-          const varyWithOrigin = vary.append(errHeadersSet.vary || errHeadersSet.Vary || '', 'Origin');
-          delete errHeadersSet.Vary;
-  
-          err.headers = {
-            ...errHeadersSet,
-            ...headersSet,
-            ...{ vary: varyWithOrigin },
-          };
+        } catch (err) {
+          if (err instanceof CorsError) {
+            const errHeadersSet = err.headers || {};
+            const varyWithOrigin = vary.append(
+              errHeadersSet.vary || errHeadersSet.Vary || "",
+              "Origin"
+            );
+            delete errHeadersSet.Vary;
+
+            err.headers = {
+              ...errHeadersSet,
+              ...headersSet,
+              ...{ vary: varyWithOrigin },
+            };
+          }
           throw err;
         }
       } else {

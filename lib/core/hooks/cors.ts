@@ -79,7 +79,7 @@ export default async (app) => {
         }
         try {
           return await next();
-        } catch (err) {
+        } catch (err: any) {
           const errHeadersSet = err.headers || {};
           const varyWithOrigin = vary.append(errHeadersSet.vary || errHeadersSet.Vary || '', 'Origin');
           delete errHeadersSet.Vary;

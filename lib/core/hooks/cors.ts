@@ -1,3 +1,4 @@
+import { IncomingMessage } from 'http';
 import vary from 'vary';
 export default async (app) => { 
   const corsConfig = app.config.cors;
@@ -80,11 +81,11 @@ export default async (app) => {
         try {
           return await next();
         } catch (err) {
-          const errHeadersSet = err.headers || {};
+          const errHeadersSet = (err as IncomingMessage).headers || {};
           const varyWithOrigin = vary.append(errHeadersSet.vary || errHeadersSet.Vary || '', 'Origin');
           delete errHeadersSet.Vary;
   
-          err.headers = {
+          (err as IncomingMessage).headers = {
             ...errHeadersSet,
             ...headersSet,
             ...{ vary: varyWithOrigin },

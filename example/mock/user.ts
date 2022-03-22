@@ -1,15 +1,15 @@
 export default {
-  "GET /user/list": [
+  'GET /user/list': [
     {
       id: 1,
     },
   ],
-  "GET /user/info": (ctx) => {
+  'GET /user/info': (ctx) => {
     return {
       id: 1,
-      username: "sky",
+      username: 'sky',
       age: 22,
-      gender: "0",
+      gender: '0',
     };
   },
 };

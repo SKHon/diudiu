@@ -39,6 +39,11 @@ export default app => {
       dir: path.join(__dirname, '../log')
     },
 
+    // mock配置
+    mock: {
+      prefix: '',
+    },
+
     // ioredis 配置，使用之前，需要开启redis-server
     // redis: {
     //   port: 6379,

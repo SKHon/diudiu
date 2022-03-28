@@ -4,7 +4,7 @@ export default {
       id: 1,
     },
   ],
-  'GET /user/info': (ctx) => {
+  'GET /user/getinfo': (ctx) => {
     return {
       id: 1,
       username: 'sky',

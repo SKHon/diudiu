@@ -1,5 +1,5 @@
-import glob from "glob";
-import path from "path";
+import glob from 'glob';
+import path from 'path';
 
 export default async (app) => {
   const mockConfig = app.config.mock || {};
@@ -23,7 +23,7 @@ export default async (app) => {
       });
     });
 
-    app.use(async (ctx, next) => {
+    app.use((ctx, next) => {
       const { method, path } = ctx;
       // 拼接mock的key
       const key = `${method} ${mockConfig.prefix}${path}`;

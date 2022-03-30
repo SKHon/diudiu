@@ -40,9 +40,9 @@ export default app => {
     },
 
     // mock配置
-    mock: {
-      prefix: '',
-    },
+    // mock: {
+    //   prefix: '', // api前缀
+    // },
 
     // ioredis 配置，使用之前，需要开启redis-server
     // redis: {

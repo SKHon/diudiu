@@ -1,6 +1,8 @@
 export default {
   method: 'GET',
   handler: async (ctx) => {
-    ctx.body = "this is koa book."
+    const result = await ctx.proxy('https://registry.npmjs.com/diudiu/latest');
+
+    ctx.body = result;
   }    
 }

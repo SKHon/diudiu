@@ -60,7 +60,7 @@ export default app => {
     // },
 
     // elasticsearch: {
-    //   host: 'localhost:9200'
+    //   node: 'localhost:9200'
     // }
   }
 }

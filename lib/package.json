@@ -9,10 +9,10 @@
   "author": "SKHon",
   "license": "ISC",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.6.0",
     "@koa/cors": "^3.1.0",
     "axios": "^0.26.1",
     "ejs": "^3.1.6",
-    "elasticsearch": "^16.7.2",
     "glob": "^7.2.0",
     "ioredis": "^4.27.9",
     "jsonwebtoken": "^8.5.1",

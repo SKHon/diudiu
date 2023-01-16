@@ -8,7 +8,7 @@ export default async (app) => {
     let client = new elasticsearch.Client(esConfig);
     const c = { cyan: '\x1b[36m', red: '\x1b[31m', end: '\x1b[39m' };
     try {
-      await client.ping({
+      await client.ping({}, {
         requestTimeout: 1000
       })
       app.use((ctx, next) => {

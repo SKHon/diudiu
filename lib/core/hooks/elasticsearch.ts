@@ -1,4 +1,4 @@
-import elasticsearch from 'elasticsearch';
+import elasticsearch from '@elastic/elasticsearch';
 import { DiudiuProcess } from '../types';
 const dprocess = process as DiudiuProcess;
 export default async (app) => {

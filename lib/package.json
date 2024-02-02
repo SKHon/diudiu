@@ -1,6 +1,6 @@
 {
   "name": "diudiu-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "./dist/core/index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "log4js": "^6.3.0",
     "mysql2": "^2.3.0",
     "pug": "^3.0.2",
+    "typescript": "^5.3.3",
     "vary": "^1.1.2"
   },
   "devDependencies": {

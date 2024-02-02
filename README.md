@@ -41,7 +41,7 @@ fix: calendar today outline
 feat(badge): color property can be used for non-dot badge 
 ```
 # 官方群
-<img src="/docs/qq.jpg" alt="qq group"/>
+<img src="/docs/qq.jpg" alt="qq group" width="100"/>
 
 # License
 

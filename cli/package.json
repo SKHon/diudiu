@@ -1,6 +1,6 @@
 {
   "name": "diudiu-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": {
     "diudiu": "./bin/diudiu"
   },

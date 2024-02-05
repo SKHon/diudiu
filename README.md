@@ -1,8 +1,13 @@
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs" width="300"/>
 
-  [![NPM version][npm-image]][npm-url]
-  [![build status][travis-image]][build-url]
-  [![PR's Welcome][pr-welcoming-image]][pr-welcoming-url]
+```html
+   _ _ _ _     _ _ _ _      _       _
+  | _ _ _ |   |_ _ _ _|    | |     | | 
+  | |   | |      | |       | |     | |
+  | |   | |      | |       | |     | |
+  | |  | |     __| |__     | |_ _ _| |
+  | | / /     |_ _ _ _|    |_ _ _ _ _|
+```
 
   一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
 
@@ -35,7 +40,7 @@ npm run dev
     - npm run dev
 
 
-### pr规范
+## pr规范
 对于 Pull Request，请遵守以下几点要求1：
 
 1. 标题请写明本次 PR 的目的（做了 什么 工作，修复了 什么 问题）。

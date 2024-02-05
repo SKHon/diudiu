@@ -1,0 +1,23 @@
+{
+  "name": "diudiu-cli",
+  "version": "0.0.5",
+  "bin": {
+    "diudiu": "./bin/diudiu"
+  },
+  "description": "a node web server's cli",
+  "author": "liujianghong",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 14.15.0"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "ejs": "^2.5.6",
+    "inquirer": "^7.0.0",
+    "lodash.merge": "^4.6.2",
+    "nodemon": "^1.19.1",
+    "ora": "^3.4.0",
+    "request": "^2.88.0",
+    "tsconfig-paths": "^3.9.0"
+  }
+}

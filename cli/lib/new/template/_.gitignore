@@ -1,0 +1,10 @@
+node_modules
+.vscode
+.mix
+.DS_Store
+.sqlite
+test/.temp/**/*
+!test/.temp/.gitkeep
+log
+.idea/
+dist

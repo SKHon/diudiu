@@ -64,7 +64,6 @@ function walkFile (dirPath, callback) {
 
 function getAppPath () {
   let appPath = process.cwd()
-  console.log('==>',appPath);
 
   while (appPath != '/') {
     if (fs.existsSync(path.join(appPath, 'package.json'))) {

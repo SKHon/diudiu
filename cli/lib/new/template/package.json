@@ -1,0 +1,23 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "diudiu example",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node -T index.ts",
+    "build": "rm -rf ./dist && npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "diudiu-core": "<%= coreVersion %>",
+    "ini": "^1.3.5",
+    "koa-router": "^10.1.1",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.45",
+    "babel-polyfill": "^6.26.0",
+    "ts-node": "^8.3.0"
+  }
+}

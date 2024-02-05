@@ -6,8 +6,6 @@
 
   一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
 
-[工程启动指南](./DEMOSTART.md "指南")
-
 ## 使用指南
 1. 全局安装脚手架
 ```bash
@@ -29,21 +27,15 @@ npm run dev
 ## 开发指南
 1. 将diudiu工程最新代码拉下来
 2. 目录介绍
-  - lib：核心工程
-  - example：调试工程，
-  - cli：脚手架工程。
+    - lib：核心工程
+    - example：调试工程，
+    - cli：脚手架工程。
 3. 在主工程diudiu下，按顺序执行
-   - npm run lerna
-   - npm run dev
+    - npm run lerna
+    - npm run dev
 
 
-## git commit 指南
-
-```bash
-<类型>[可选 范围]: <描述>
-```
-
-### commit 类型
+### pr规范
 对于 Pull Request，请遵守以下几点要求1：
 
 1. 标题请写明本次 PR 的目的（做了 什么 工作，修复了 什么 问题）。

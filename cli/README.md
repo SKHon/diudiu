@@ -14,7 +14,6 @@
 
 ```
 
-hobber 项目在这里 `http://git.lianjia.com/hydra/hobber`
 
 ### 安装方式
 

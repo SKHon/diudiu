@@ -9,7 +9,7 @@ module.exports = () => pkgRaw( pkg.name, registry ).then(raw => {
   if (latest && versionCompare(pkg.version, '>=', latest)) return
 
   console.log(`
-    New version of hobber-cli available ${pkg.version} -> ${latest}
+    New version of diudiu-cli available ${pkg.version} -> ${latest}
     Run the following command to update
     > npm i ${pkg.name} -g --registry=${registry}
   `)

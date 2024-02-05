@@ -38,7 +38,7 @@ function commands (argv) {
 
   program
     .command('new <name>')
-    .description('新建 hobber 项目')
+    .description('新建 diudiu 项目')
     .option('-f, --force', '强制创建')
     .action((name, cmd) => {
       matched = true
@@ -82,8 +82,8 @@ function checkAppPath (appPath) {
     if (!coreVersion) return noDiudiu()
     if (versionCompare(coreVersion, '<', needCoreVersion)) {
       console.log('\n  ' +
-        `New version of hobber-core available ${coreVersion} -> ${needCoreVersion}\n  ` +
-        `Please upgrade hobber-core's version in "package.json" file and reinstall`
+        `New version of diudiu-core available ${coreVersion} -> ${needCoreVersion}\n  ` +
+        `Please upgrade diudiu-core's version in "package.json" file and reinstall`
       )
     }
     return true

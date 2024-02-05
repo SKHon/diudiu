@@ -1,4 +1,4 @@
-<img src="/docs/logo.png" alt="Koa middleware framework for nodejs" size=300/>
+<img src="/docs/logo.png" alt="Koa middleware framework for nodejs" width="300"/>
 
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][build-url]

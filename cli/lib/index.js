@@ -60,6 +60,32 @@ function commands (argv) {
           .then(message => ok(message))
           .catch(message => fail(message))
     })
+  
+    program
+      .command('controller <path>')
+      .description('创建 diudiu-controller')
+      .action((path) => {
+        matched = true
+        const appPath = getAppPath()
+        if (appPath && checkAppPath(appPath) ) {
+          require('./controller')(appPath, path)
+            .then(message => ok(message))
+            .catch(message => fail(message))
+        }
+      })
+
+    program
+      .command('mock <path>')
+      .description('创建 diudiu mock')
+      .action((path) => {
+        matched = true
+        const appPath = getAppPath()
+        if (appPath && checkAppPath(appPath) ) {
+          require('./mock')(appPath, path)
+            .then(message => ok(message))
+            .catch(message => fail(message))
+        }
+      })  
 
   program.parse(argv)
 

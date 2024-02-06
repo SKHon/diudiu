@@ -9,8 +9,6 @@ const {
   tree
 } = require('../utils')
 
-const packageJson = require('../../package.json')
-
 const needToCompile = ['.ts', '.json', '.md', '.js']
 const needToRename = {
   '_.gitignore': '.gitignore',

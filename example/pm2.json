@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "xtransit",
+      "script": "xtransit.js",
+      "exec_mode": "fork"
+    }
+  ]
+}

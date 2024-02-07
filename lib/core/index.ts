@@ -2,7 +2,7 @@ import Koa from 'koa';
 import path from 'path';
 import { getHooks, deepMerge } from './utils'
 import { Hook, App, DiudiuProcess } from './types';
-const hooks = ['formData', 'log', 'proxy', 'mock', 'redis', 'mysql', 'elasticsearch', 'static', 'view', 'bodyparser', 'login', 'custom-middlewares', 'cors', 'router', 'lift'];
+const hooks = ['xprofiler', 'formData', 'log', 'proxy', 'mock', 'redis', 'mysql', 'elasticsearch', 'static', 'view', 'bodyparser', 'login', 'custom-middlewares', 'cors', 'router', 'lift'];
 
 type Params = {
   appPath: string;

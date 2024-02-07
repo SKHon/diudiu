@@ -62,5 +62,9 @@ export default app => {
     // elasticsearch: {
     //   node: 'localhost:9200'
     // }
+
+    // xprofiler: {
+    //   log_dir: 'xprofiler'
+    // }
   }
 }

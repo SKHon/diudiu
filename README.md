@@ -30,7 +30,8 @@ npm run dev
 
 ## xprofiler监控告警能力
 1. 按照[部署监控服务端](https://www.yuque.com/hyj1991/easy-monitor/deployment)，完成前置部署能力，并分别启动相关服务（包括xprofiler-console、xtransit-manager、xtransit-server）。
-2. 访问http://127.0.0.1:8443/，创建新应用，并生成appId和appSecret，并将两个参数写到diudiu项目中的xtransit.js配置中，像下面这样：
+
+2. 访问[http://127.0.0.1:8443/](http://127.0.0.1:8443/)，创建新应用，并生成appId和appSecret，并将两个参数写到diudiu项目中的xtransit.js配置中，像下面这样：
 ```JavaScript
 const xtransit = require('xtransit');
 const path = require('path');
@@ -42,6 +43,7 @@ const config = {
 };
 xtransit.start(config);
 ```
+
 3. 在diudiu中config/config.development.ts中配置xprofiler：
 ```JavaScript
 import path from 'path';

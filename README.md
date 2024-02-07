@@ -8,7 +8,8 @@
          | | / /     |_ _ _ _|    |_ _ _ _ _|    | | / /      |_ _ _ _|    |_ _ _ _ _|
 ```
 [![NPM version][npm-image]][npm-url]
-  一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
+  
+一个基于koa的BFF框架，内置路由、模板、日志、mysql、redis、elasticsearch等模块。也支持用户自定义中间件能力。
 
 ## 使用指南
 1. 全局安装脚手架

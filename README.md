@@ -64,7 +64,7 @@ npm run dev
 npm run xtransit
 ```
 
-5. 等1~2分钟，就可以在http://127.0.0.1:8443/创建的应用中，看到node服务的监控指标了。相关详细指标可参考[告警上下文](https://www.yuque.com/hyj1991/easy-monitor/alarm#UC5qF)
+5. 等1~2分钟，就可以在[http://127.0.0.1:8443/](http://127.0.0.1:8443/)创建的应用中，看到node服务的监控指标了。相关详细指标可参考[告警上下文](https://www.yuque.com/hyj1991/easy-monitor/alarm#UC5qF)
 
 ## 开发指南
 1. 将diudiu工程最新代码拉下来

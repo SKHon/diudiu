@@ -100,9 +100,6 @@ npm run xtransit
 - chore: 构建过程或者辅助工具的变动
 - merge: 代码合并
 
-# 官方群
-<img src="/docs/qq.jpg" alt="qq group" width="300"/>
-
 # License
 
 如有引用，请标明出处。

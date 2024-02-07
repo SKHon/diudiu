@@ -10,3 +10,4 @@ test/.temp/**/*
 *.log
 .idea/
 dist
+package-lock.json
